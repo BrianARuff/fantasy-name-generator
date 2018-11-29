@@ -5,12 +5,18 @@ class FantasyName {
         this.new_name = [];
     }
 
-    gen_name(len) {
+    getName(len) {
+        if (!len) {
+            len = [3, 4, 5, 6][Math.floor(Math.random() * 4)];
+        }
         for (let i = 0; i < len + 1; i++) {
             if (i === 0) {
-                this.new_name.push[this.consonants[Math.floor(Math.random() * this.consonants.length)]];
-            }
-            else if (i % 2 === 0 || i % 5 === 0) {
+                this.new_name.push[
+                    this.consonants[
+                        Math.floor(Math.random() * this.consonants.length)
+                    ]
+                ];
+            } else if (i % 2 === 0 || i % 5 === 0) {
                 this.new_name.push(
                     this.vowels[Math.floor(Math.random() * this.vowels.length)]
                 );
@@ -24,12 +30,6 @@ class FantasyName {
         }
         return this.new_name.join("");
     }
-
-    print() {
-        console.log(this.new_name.join(""));
-    }
 }
 
-exports.printMsg = function() {
-    console.log("Thanks for using Fantasy Name Generator");
-};
+module.exports = FantasyName;

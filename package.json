@@ -1,10 +1,13 @@
 {
-  "name": "fantasy-name-generator",
-  "version": "1.0.0",
-  "description": "Generate fantasy like names with your choice in how long the name will be.",
-  "main": "index.js",
-  "repository": "https://github.com/BrianARuff/fantasy-name-generator.git",
-  "author": "Brian A. Ruff, <thelonewolf198927@gmail.com>",
-  "license": "MIT",
-  "private": false
+    "name": "fantasy-name-generator",
+    "version": "1.0.0",
+    "description": "Generate fantasy like names with your choice in how long the name will be.",
+    "main": "index.js",
+    "repository": "https://github.com/BrianARuff/fantasy-name-generator.git",
+    "author": "Brian A. Ruff, <thelonewolf198927@gmail.com>",
+    "license": "MIT",
+    "private": false,
+    "dependencies": {
+        "node": "^11.2.0"
+    }
 }
