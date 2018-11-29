@@ -1,6 +1,6 @@
 {
   "name": "fantasy-name",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate fantasy names based on the length you desire\"",
   "main": "fantasy-names.js",
   "repository": "https://github.com/BrianARuff/fantasy-name-generator.git",
