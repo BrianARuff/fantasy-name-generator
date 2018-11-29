@@ -1,4 +1,4 @@
-# fantasy-name-generator
+# fantasy-name package
 
 # How to use this package.
 
