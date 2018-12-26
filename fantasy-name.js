@@ -4,6 +4,10 @@ class FantasyName {
         this.consonants = "bcdfghjklmnpqrstvwxyz";
         this.new_name = [];
     }
+    
+    clearName() {
+        this.new_name = [];
+    }
 
     getName(len) {
         if (!len) {
