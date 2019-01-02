@@ -10,6 +10,7 @@ class FantasyName {
     }
 
     getName(len) {
+        this.new_name = [];
         if (!len) {
             len = [3, 4, 5, 6][Math.floor(Math.random() * 4)];
         }
