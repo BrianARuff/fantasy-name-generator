@@ -9,30 +9,27 @@ class FantasyName {
 	// one of the newest versions of Chrome using V8.
         this.new_name = [];
     }
-    
-
-    clearName() {
-        this.new_name = [];
-    }
 
     getName(len) {
-        this.clearName();
+	// reset the name so if you reset the name it doesn't just push on to the old name
+        this.new_name = [];
 	    
-        if (!len) {
+	// error handling for user input
+        if (!len || typeof len !== 'number') {
             len = [3, 4, 5, 6][Math.floor(Math.random() * 4)];
         }
-	    
-        if (typeof len !== 'number') {
-			throw new Error("Input must be a number")
-        }
-	    
+	
+	// I do a for loop here since we need to create a word of a certain length, and I can do this in O(n) time.
         for (let i = 0; i < len + 1; i++) {
+	    // The program's name were more sensible if the first letter was a consonant.
             if (i === 0) {
                 this.new_name.push[
                     this.consonants[
                         Math.floor(Math.random() * this.consonants.length)
                     ]
                 ];
+	    // the secret sauce is assigning vowels where the index is perfectly divisible by 2 or 5, similar to the fizzbuzz
+	    // challenge, only it checks for 3, 5 and 15.
             } else if (i % 2 === 0 || i % 5 === 0) {
                 this.new_name.push(
                     this.vowels[Math.floor(Math.random() * this.vowels.length)]
