@@ -1,6 +1,7 @@
 class FantasyName {
     // initialize startup value holder via a constructor, since strings are serializable and have O(1) access when the index
-    // is known, so making a string to be accessed like an array made sense here.
+    // is known, so making a string to be accessed like an array made sense here since I didn't need the memory bloat of an
+    // an array since I am only accessing values by index and not manipulating data here.
     constructor() {
         this.vowels = "aeiou";
         this.consonants = "bcdfghjklmnpqrstvwxyz";
