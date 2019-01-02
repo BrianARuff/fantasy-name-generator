@@ -11,6 +11,9 @@ class FantasyName {
 
     getName(len) {
         this.new_name = [];
+        if (typeof len !== 'Number') {
+			throw new Error("Input must be a number")
+        }
         if (!len) {
             len = [3, 4, 5, 6][Math.floor(Math.random() * 4)];
         }
