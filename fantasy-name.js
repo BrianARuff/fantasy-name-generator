@@ -17,12 +17,15 @@ class FantasyName {
 
     getName(len) {
         this.clearName();
-        if (typeof len !== 'number') {
-			throw new Error("Input must be a number")
-        }
+	    
         if (!len) {
             len = [3, 4, 5, 6][Math.floor(Math.random() * 4)];
         }
+	    
+        if (typeof len !== 'number') {
+			throw new Error("Input must be a number")
+        }
+	    
         for (let i = 0; i < len + 1; i++) {
             if (i === 0) {
                 this.new_name.push[
