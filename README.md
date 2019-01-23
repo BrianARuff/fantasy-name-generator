@@ -15,7 +15,7 @@ or
 
 3. Invoke getName method to generate a name. If you don't provide a length the input will default to either 3, 4 or 5 characters in length, and if you don't provide a value of type `number` then it will also default to 3, 4, or 5 in length.
 
-```console.log(fantasy_name.getName(5)) // returns name```
+```console.log(fantasyName.getName(5)) // returns name```
 
 
 Thanks for checking out my app.
